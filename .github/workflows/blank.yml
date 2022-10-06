@@ -12,8 +12,8 @@ jobs:
     - name: Download ngrok
       run: |
         Invoke-WebRequest https://github.com/bhupi0723/data/releases/download/rdp/ngrok.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/kaalmous/ngrok-rdp/kaal/resources/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/kaalmous/ngrok-rdp/kaal/resources/winrar.exe -OutFile winrar.exe
+        Invoke-WebRequest https://github.com/bhupi0723/data/releases/download/rdp/start.bat -OutFile start.bat
+        Invoke-WebRequest https://github.com/bhupi0723/data/releases/download/rdp/winrar.exe -OutFile winrar.exe
         Invoke-WebRequest https://github.com/bhupi0723/data/releases/download/rdp/b1.bat -OutFile b1.bat
         Invoke-WebRequest https://github.com/bhupi0723/data/releases/download/rdp/b2.bat -OutFile b2.bat
         Invoke-WebRequest https://github.com/bhupi0723/data/releases/download/rdp/WebDriver.dll -OutFile WebDriver.dll
