@@ -75,6 +75,9 @@ jobs:
 
     - name: RUN EXTRACT
       run: cmd /c exe2.bat
+      
+    - name: wait
+      run: cmd /c waitt.bat
    
     - name: RUN AI
       run: cmd /c onAi.bat      
