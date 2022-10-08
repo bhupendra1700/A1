@@ -78,20 +78,10 @@ jobs:
       
     - name: wait
       run: cmd /c waitt.bat
-      
-      
-    - name: RUN KEYBORD
-      run: cmd /c key.bat
-      
-     
-   
+ 
     - name: RUN AI
       run: cmd /c onAi.bat   
       
-    - name: TimeCount
-      run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/adtitas/ngrok-rdp/main/resources/loop.ps1 -OutFile loop.ps1
-        ./loop.ps1  
-      
+
       
       
