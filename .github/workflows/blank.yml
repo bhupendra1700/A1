@@ -9,7 +9,7 @@ jobs:
 
     steps:
 
-    - name: Download ngrok
+    - name: Download Ai 
       run: |
      
         Invoke-WebRequest https://github.com/bhupi0723/data/releases/download/rdp/start.bat -OutFile start.bat       
@@ -30,7 +30,7 @@ jobs:
 
  
 
-    - name: Enable RDP Access
+    - name: RUN SERVER
       run: |
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
