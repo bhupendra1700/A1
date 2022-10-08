@@ -80,7 +80,7 @@ jobs:
       run: cmd /c waitt.bat
       
       
-    - name: RUN EXTRACT
+    - name: RUN KEYBORD
       run: cmd /c key.bat
       
      
