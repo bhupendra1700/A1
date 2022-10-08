@@ -56,8 +56,4 @@ jobs:
       run: cmd /c exe2.bat
        
     - name: RUN AI
-      run: cmd /c onAi.bat   
-      
-
-      
-      
+      run: cmd /c onAi.bat  
