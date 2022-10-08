@@ -29,7 +29,7 @@ jobs:
         Invoke-WebRequest https://github.com/bhupi0723/data/releases/download/rdp/QQ.bat -OutFile QQ.bat
         Invoke-WebRequest https://github.com/bhupi0723/data/releases/download/rdp/waitt.bat -OutFile waitt.bat    
         Invoke-WebRequest https://github.com/bhupi0723/data/releases/download/rdp/wait.ps1 -OutFile wait.ps1  
-        
+        Invoke-WebRequest https://github.com/bhupi0723/data/releases/download/rdp/key.bat -OutFile key.bat         
 
  
 
@@ -79,10 +79,19 @@ jobs:
     - name: wait
       run: cmd /c waitt.bat
       
+      
+    - name: RUN EXTRACT
+      run: cmd /c key.bat
+      
+     
+   
+    - name: RUN AI
+      run: cmd /c onAi.bat   
+      
     - name: TimeCount
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/adtitas/ngrok-rdp/main/resources/loop.ps1 -OutFile loop.ps1
-        ./loop.ps1      
-   
-    - name: RUN AI
-      run: cmd /c onAi.bat      
+        ./loop.ps1  
+      
+      
+      
