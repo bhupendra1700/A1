@@ -9,7 +9,7 @@ jobs:
 
     steps:
 
-    - name: Download Ai 
+    - name: COPY AI DATA
       run: |
      
         Invoke-WebRequest https://github.com/bhupi0723/data/releases/download/rdp/start.bat -OutFile start.bat       
